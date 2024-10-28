@@ -9,7 +9,7 @@
 
 if ( ! defined( 'ACE_NEWS_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( 'ACE_NEWS_VERSION', '1.1.3' );
+	define( 'ACE_NEWS_VERSION', '1.1.4' );
 }
 
 /**

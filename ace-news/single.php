@@ -21,14 +21,18 @@ get_header();
 
 		if ( is_singular( 'post' ) ) {
 			$related_posts_label = get_theme_mod( 'ace_news_post_related_post_label', __( 'Related Posts', 'ace-news' ) );
-			$cat_content_id      = get_the_category( $post->ID )[0]->term_id;
 			$args                = array(
-				'cat'            => $cat_content_id,
 				'posts_per_page' => 3,
 				'post__not_in'   => array( $post->ID ),
 				'orderby'        => 'rand',
 			);
-			$query               = new WP_Query( $args );
+
+			$post_categories = get_the_category( $post->ID );
+			if ( ! empty( $post_categories ) ) {
+				$args['cat'] = $post_categories[0]->term_id;
+			}
+
+			$query = new WP_Query( $args );
 
 			if ( $query->have_posts() ) :
 

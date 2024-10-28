@@ -3,8 +3,8 @@
 Contributors: ascendoor
 Tags: custom-background, custom-logo, custom-colors, custom-menu, featured-images, threaded-comments, translation-ready, theme-options, footer-widgets, full-width-template, left-sidebar, right-sidebar, news, blog
 Requires at least: 5.0
-Tested up to: 6.5
-Stable tag: 1.1.3
+Tested up to: 6.6
+Stable tag: 1.1.4
 Requires PHP: 7.4
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -28,6 +28,11 @@ The theme is integrated to work with following plugins:
 * Contact Form 7: This plugin is recommended to use for contact forms on contact page.
 
 == Changelog ==
+
+= 1.1.4 =
+* Fixed condition to check post category in related posts section
+* Updated language file
+* Tested up to WordPress 6.6
 
 = 1.1.3 =
 * Added condition to hide the image div if there are no post thumbnails
