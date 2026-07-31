@@ -102,9 +102,9 @@ if ( class_exists( 'WP_Customize_Section' ) ) {
 			$text_color       = ! empty( $this->text_color ) ? esc_attr( $this->text_color ) : '#50575e';
 			?>
 			<li id="accordion-section-<?php echo esc_attr( $this->id ); ?>" class="ace_news_upsell_section accordion-section control-section control-section-<?php echo esc_attr( $this->id ); ?> cannot-expand">
-				<h3 class="accordion-section-title" style="color:<?php echo esc_attr( $text_color ); ?>;background:<?php echo esc_attr( $background_color ); ?>;border-left-color:<?php echo esc_attr( $background_color ); ?>;">
+				<h3 class="accordion-section-title" style="color:<?php echo esc_attr( $text_color ); ?>;background:<?php echo esc_attr( $background_color ); ?>;border-left-color:<?php echo esc_attr( $background_color ); ?>;display:flex;align-items:center;justify-content:space-between;">
 					<?php echo esc_html( $this->title ); ?>
-					<a href="<?php echo esc_url( $this->url ); ?>" class="button button-secondary alignright" target="_blank" style="margin-top: -4px;"><?php echo esc_html( $this->button_text ); ?></a>
+					<a href="<?php echo esc_url( $this->url ); ?>" class="button button-secondary alignright" target="_blank" style="margin-top: -4px; background-color: #fff; padding-right: 24px;"><?php echo esc_html( $this->button_text ); ?></a>
 				</h3>
 			</li>
 			<?php
